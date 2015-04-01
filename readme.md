@@ -14,8 +14,9 @@ https://github.com/sympmarc/SPServices <- To download jquery.SPServices
 
 In your sharepoint form page:
 1) Modify the <SharePoint:FormField> like that:
+```html
 <SharePoint:FormField runat="server" id="ff15{concat($Pos,'---YOUR UNIQUE IDENTIFIER GOES HERE---')}" ControlMode="New" FieldName="User_x0020_Roles" __designer:bind="{ddwrt:DataBind('i',concat('ff15',concat($Pos,'---YOUR UNIQUE IDENTIFIER GOES HERE---')),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@User_x0020_Roles')}"/>
-
+```
 2) places files anywhere in hive or virtual fs and add this markup to your form:
 ```html
 <script src="[YOUR PATH]/jquery.js"></script>
