@@ -17,7 +17,7 @@ In your sharepoint form page:
 ```html
 <SharePoint:FormField runat="server" id="ff15{concat($Pos,'---YOUR UNIQUE IDENTIFIER GOES HERE---')}" ControlMode="New" FieldName="User_x0020_Roles" __designer:bind="{ddwrt:DataBind('i',concat('ff15',concat($Pos,'---YOUR UNIQUE IDENTIFIER GOES HERE---')),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@User_x0020_Roles')}"/>
 ```
-2) places files anywhere in hive or virtual fs and add this markup to your form:
+2) place files anywhere in hive or virtual fs and add this markup to your form:
 ```html
 <script src="[YOUR PATH]/jquery.js"></script>
 <script src="[YOUR PATH]/jquery.SPServices-0.7.2.js"></script>
